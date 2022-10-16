@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registeration</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style/style.css">
+
+    
+    
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body onload="readLocalStorage()">
+    <div class="grid-container">
+        <!-- header -->
+        <header class="header">
+            <div class="menu-icon">
+               
+            </div>
+
+        </header>
+
+
+        <!-- end header -->
+
+        <!-- sidebar -->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined">inventory</span>  Ratana
+                </div>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">menu_book</span> <a href="">Student Registeration</a>
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">menu_book</span> <a href="studentlist.html">Student List</a> 
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-icons-outlined">menu_book</span> <a href="">BOOK</a>
+                </li>
+            </ul>
+        </aside>
+        <!-- end sidebar -->
+
+        <!-- Main -->
+        <main class="main-container">
+            <div class="wrapper">
+                <div class="title">Student Registeration</div>
+                <hr class="hr-style">
+                <form action="" onsubmit="event.preventDefault(); onFormSubmit()">
+                    <div class="input_field">
+                        <label for="">ID</label>
+                        <input type="text" class="input" id="id">
+                    </div>
+    
+                    <div class="input_field">
+                        <label for="">Name</label>
+                        <input type="text" class="input" id="name">
+                    </div>
+    
+    
+                    <div class="input_field">
+                        <label for="">Gender</label>
+                        <div class="custome_select" >
+                            <select id="genders"> 
+                                <option value="">Select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="input_field">
+                        <label for="">Class</label>
+                        <div class="custome_select">
+                            <select id="classes">
+                                <option value="">Select</option>
+                                <option value="E1">E1</option>
+                                <option value="E2">E2</option>
+                                <option value="E3">E3</option>
+                                <option value="E4">E4</option>
+                                <option value="E5">E5</option>
+                                <option value="E6">E6</option>
+                                <option value="E7">E7</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="input_field">
+                        <label for="">Course</label>
+                        <div class="custome_select">
+                            <select id="courses">
+                                <option value="">Select</option>
+                                <option value="Programming">Programming</option>
+                                <option value="Network">Network</option>
+                                <option value="Web Design">Web Design</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="input_field">
+                        <label for="">Email</label>
+                        <input type="text" class="input" id="email">
+                    </div>
+                    <div class="">
+                        <label for="" class="label-msg">Register Successed</label>
+                    </div>
+                    <div class="input_field">
+                        <input type="submit" value="Register" class="btn" >
+                        
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        
+        <!-- end main -->
+    </div>
+
+    <!-- Script -->
+    <script src="javascript/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.filter{
+    position: absolute;
+    
+
+    background-color: red;
+
+    
+}
+.student-tb{
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+}
+table{
+
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+
+    background: #fafafa;
+    width: 60%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+    
+}
+th{
+    background: #927bd1;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+th, td{
+    padding: 12px 10px;
+}
+td{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+tr:nth-child(odd){
+    background-color: #efebe9;
+}
